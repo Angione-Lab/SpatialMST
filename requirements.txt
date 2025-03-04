@@ -6,5 +6,5 @@ torch_geometric
 torch
 matplotlib
 POT
-sklearn
+scikit-learn
 scipy
