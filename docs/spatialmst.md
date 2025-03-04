@@ -1,0 +1,4 @@
+ 
+# spatialmst module
+
+::: spatialmst.spatialmst
