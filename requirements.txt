@@ -1,1 +1,5 @@
 numpy
+scanpy
+pandas
+torch_geometric
+matplotlib
