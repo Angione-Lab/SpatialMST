@@ -3,3 +3,4 @@ scanpy
 pandas
 torch_geometric
 matplotlib
+POT
