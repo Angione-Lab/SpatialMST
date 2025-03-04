@@ -1,6 +1,10 @@
 numpy
 scanpy
+mudata
 pandas
 torch_geometric
+torch
 matplotlib
 POT
+sklearn
+scipy
