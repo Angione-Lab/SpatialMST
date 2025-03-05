@@ -1,1 +1,1 @@
-from .SpatialMST import *
+from SpatialMST import *

@@ -1,1 +1,1 @@
-from .SpatialMST_Trainer import *
+from SpatialMST_Trainer import *
