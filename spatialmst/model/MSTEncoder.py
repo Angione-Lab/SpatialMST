@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from modules.metabolic_modality import MetaboliteModality, ReactionModality
-from modules.transcriptomic_modality import TranscriptomicModality
-from layers.IntegrationLayer import IntegrationLayer
+from spatialmst.modules.metabolic_modality import MetaboliteModality, ReactionModality
+from spatialmst.modules.transcriptomic_modality import TranscriptomicModality
+from spatialmst.layers.IntegrationLayer import IntegrationLayer
 
 class MSTEncoder(nn.Module):
     """Spatial Multimodal Self-supervised Transformer"""
