@@ -1,0 +1,19 @@
+Hyperparameters:
+  flux_in: 168 
+  flux_hidden: 64 
+  met_in: 70 
+  met_hidden: 32 
+  rna_in: 3000
+  rna_hidden: 64 
+  hidden_channels: 128 
+  out_channels: 128
+  heads : 4
+  drop_edge_rate_1 : 0.4
+  drop_edge_rate_2 : 0.5
+  drop_feature_rate_1 : 0.4
+  drop_feature_rate_2 : 0.5
+  tau : 0.1
+  lr : 1.0e-4
+  weight_decay : 0.001
+  gamma: 0.01
+  epochs : 100

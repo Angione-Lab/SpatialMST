@@ -105,3 +105,9 @@ ENV/
 
 # IDE settings
 .vscode/
+/data/Flux
+/data/single_cell
+/data/spatial
+/data/visium
+/data/marker_genes_dict.npy
+/data/marker_module_dict.npy
