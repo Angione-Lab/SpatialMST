@@ -111,3 +111,4 @@ ENV/
 /data/visium
 /data/marker_genes_dict.npy
 /data/marker_module_dict.npy
+/notebook

@@ -103,7 +103,7 @@ class SpatialMSTModel(L.LightningModule):
         return result
 
 class SpatialMSTTrainer():
-    def __init__(self, adata, config_file = 'config.yaml'):
+    def __init__(self, adata, config_file = '..\spatialmst\config.yaml'):
         super().__init__()
         seed = 42
         self.seed_everything(seed)
