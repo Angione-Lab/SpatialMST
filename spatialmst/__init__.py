@@ -1,7 +1,7 @@
-from .model import *
-from .modules import *
-from .train import *
-from .utils import *
+from model import *
+from modules import *
+from train import *
+from utils import *
 
 """Top-level package for SpatialMST."""
 
