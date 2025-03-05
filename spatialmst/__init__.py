@@ -1,7 +1,7 @@
-# from model import *
-# from modules import *
-# from train import *
-# from utils import *
+from spatialmst.model import *
+from spatialmst.modules import *
+from spatialmst.train import *
+from spatialmst.utils import *
 
 """Top-level package for SpatialMST."""
 
