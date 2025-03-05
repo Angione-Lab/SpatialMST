@@ -7,7 +7,8 @@ import random
 from yaml import SafeLoader
 import yaml
 
-from model.SpatialMST import MSTEncoder, MSTDecoder
+from model.MSTEncoder import MSTEncoder
+from model.MSTDecoder import MSTDecoder
 from utils.util import clustering
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
