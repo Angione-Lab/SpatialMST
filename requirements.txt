@@ -1,11 +1,11 @@
-numpy
+"NumPy<2.0"
 scanpy
 mudata
 pandas
 torch_geometric
 torch
 matplotlib
-POT
 scikit-learn
 scipy
 lightning
+magic-impute
