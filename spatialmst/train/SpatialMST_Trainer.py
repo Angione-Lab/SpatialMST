@@ -4,6 +4,7 @@ import torch.optim as optim
 import lightning as L
 import numpy as np
 import random
+import os
 from yaml import SafeLoader
 import yaml
 
@@ -103,12 +104,15 @@ class SpatialMSTModel(L.LightningModule):
         return result
 
 class SpatialMSTTrainer():
-    def __init__(self, adata, config_file = '..\spatialmst\config.yaml'):
+    def __init__(self, adata, config_file = None):
         super().__init__()
         seed = 42
         self.seed_everything(seed)
         torch.set_float32_matmul_precision('medium')
         self.adata = adata
+        if config_file is None:
+            base_dir = os.path.dirname(os.path.dirname(__file__))
+            config_file = os.path.join(base_dir, 'config.yaml')
         self.config = yaml.load(open(config_file), Loader=SafeLoader)['Hyperparameters']
         
         for mod in self.adata.mod:
