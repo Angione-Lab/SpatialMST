@@ -10,11 +10,30 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MaxAbsScaler
 
 class SpatialDataset(Dataset):
-    def __init__(self, adata, K=3):
+    def __init__(self, adata):
         self.adata = adata
-        self.K = K
+        best_k = self._optimize_k(adata)
+        self.K = best_k
         self.data = self.construct_graph_data(self.adata, self.K)
-        
+    
+    def _optimize_k(self, adata):
+        from sklearn.preprocessing import MinMaxScaler
+        scaler = MinMaxScaler()
+        k_range=[10,13,15,20,25,30,35,40,45,50]
+        x = np.concatenate((adata['rna'].X, adata['flux'].X, adata['metabolite'].X), axis=1)
+        x = scaler.fit_transform(x)
+        moran_scores = []
+        for k in k_range:
+            g = kneighbors_graph(adata.obsm['spatial'], k, mode='distance', include_self=False)
+            moranI = sc.metrics.morans_i(g, x.T)
+            moran_scores.append(np.nanmax(moranI))
+        moran_scores = np.array(moran_scores)
+        # select the k with maximum score    
+        best_k = k_range[np.argmax(moran_scores)]
+        print(f"identified best k: {best_k}")
+        return best_k
+            
+    
     def knn_permutation(self, feature, edge_index, k=5):
 
         N = feature.shape[0]
