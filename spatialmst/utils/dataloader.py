@@ -10,10 +10,11 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MaxAbsScaler
 
 class SpatialDataset(Dataset):
-    def __init__(self, adata):
+    def __init__(self, adata, k = None):
         self.adata = adata
-        best_k = self._optimize_k(adata)
-        self.K = best_k
+        if k is None:
+            k = self._optimize_k(adata)
+        self.K = k
         self.data = self.construct_graph_data(self.adata, self.K)
     
     def _optimize_k(self, adata):
