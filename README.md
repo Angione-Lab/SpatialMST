@@ -60,4 +60,4 @@ https://www.biorxiv.org/content/10.1101/2020.09.23.310656v1.full [Github link](h
 [Tutorial on spatial multimodal integration and analysis](https://github.com/Angione-Lab/Multimodal_breast_cancer_subtype_analysis/tree/main/Spatial_multi_omics_analysis)
 
 ## Download the datasets from figshare
-[Example dataset](https://figshare.com/articles/dataset/Datasets_for_breast_cancer_single-cell_and_spatial_transcriptomics_multimodal_integration_/30290779)
+[Example dataset](https://figshare.com/ndownloader/articles/30290779/versions/1?folder_path=data_spatial)
