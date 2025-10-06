@@ -51,11 +51,10 @@ Once you have a copy of the source, you can install it with:
 cd spmetatme
 uv pip install .
 ```
-# Generate metabolic module flux rates and metabolite abundances for spatial transcriptomics using scFEA.
+## Generate metabolic module flux rates and metabolite abundances for spatial transcriptomics using scFEA.
 The estimated metabolic module flux rates and metabolite abundances construct the two modalities and the spatial transcriptomics data represents the third modality.
 
-https://www.biorxiv.org/content/10.1101/2020.09.23.310656v1.full
-https://github.com/changwn/scFEA/tree/master
+https://www.biorxiv.org/content/10.1101/2020.09.23.310656v1.full [Github link](https://github.com/changwn/scFEA/tree/master)
 
-# Integrating Spatial Transcriptomics with Metabolic Flux and Metabolite Abundance: A Tutorial on Spatial Multimodal Analysis
-https://github.com/Angione-Lab/Multimodal_breast_cancer_subtype_analysis/tree/main/Spatial_multi_omics_analysis
+## Integrating spatial transcriptomics with metabolic module fluxes and metabolite abundance: 
+[Tutorial on spatial multimodal integration and analysis](https://github.com/Angione-Lab/Multimodal_breast_cancer_subtype_analysis/tree/main/Spatial_multi_omics_analysis)
