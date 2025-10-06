@@ -11,9 +11,37 @@
 
 
 -   Free software: MIT License
--   Documentation: https://SurajRepo.github.io/SpatialMST
-    
 
-## Features
+## Installation
+### Create environment
+    `
+    conda create -n SpatialMSTEnv python=3.11
+    conda activate SpatialMSTEnv
+    `
+### Install ipykernel
+    `
+    conda install ipykernel
+    python -m ipykernel install --user --name SpatialMSTEnv --display-name "Python(SpatialMSTEnv)"
+    `
+### Install Pot
+    `
+    conda install -c conda-forge pot
+    `
+### Install SpatialMST
+PyPI package: https://pypi.org/project/spmetatme/
 
--   TODO
+
+The source files for spMetaTME can be downloaded from the [Github repo](https://github.com/Angione-Lab/SpatialMST.git).
+
+You can either clone the public repository:
+
+```sh
+git clone https://github.com/Angione-Lab/SpatialMST.git
+```
+
+Once you have a copy of the source, you can install it with:
+
+```sh
+cd spmetatme
+uv pip install .
+```
