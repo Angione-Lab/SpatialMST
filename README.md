@@ -15,22 +15,22 @@
 ## Installation
 ### Create environment
 ```sh
-    conda create -n SpatialMSTEnv python=3.11
-    conda activate SpatialMSTEnv
+conda create -n SpatialMSTEnv python=3.11
+conda activate SpatialMSTEnv
 ```
 ### Install ipykernel
 ```sh
-    conda install ipykernel
-    python -m ipykernel install --user --name SpatialMSTEnv --display-name "Python(SpatialMSTEnv)"
+conda install ipykernel
+python -m ipykernel install --user --name SpatialMSTEnv --display-name "Python(SpatialMSTEnv)"
 ```
-### Install Pot
+### Install POT: Python Optimal Transport
 ```sh
-    conda install -c conda-forge pot
+conda install -c conda-forge pot
 ```
 ### Install SpatialMST
 PyPI package: https://pypi.org/project/spmetatme/
 ```sh
-        pip install SpatialMST
+pip install SpatialMST
 ```
 
 The source files for spMetaTME can be downloaded from the [Github repo](https://github.com/Angione-Lab/SpatialMST.git).
