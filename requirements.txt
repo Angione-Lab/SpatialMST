@@ -7,5 +7,6 @@ torch
 matplotlib
 scikit-learn
 scipy
+beautifulsoup4
 lightning
 magic-impute
