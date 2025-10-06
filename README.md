@@ -8,27 +8,31 @@
 
 
 **Spatial Multimodal Self-supervised Transformer**
-
-
 -   Free software: MIT License
 
 ## Installation
-### Create environment
+**Create environment**
 ```sh
 conda create -n SpatialMSTEnv python=3.11
 conda activate SpatialMSTEnv
 ```
-### Install ipykernel
+**Install ipykernel**
 ```sh
 conda install ipykernel
 python -m ipykernel install --user --name SpatialMSTEnv --display-name "Python(SpatialMSTEnv)"
 ```
-### Install POT: Python Optimal Transport
+**Install POT: Python Optimal Transport**
 ```sh
 conda install -c conda-forge pot
 ```
+**Install Pytorch and pytorch-geometric**
+```sh
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu129
+pip install torch_geometric
+```
+
 ### Install SpatialMST
-PyPI package: https://pypi.org/project/spmetatme/
+PyPI package: https://pypi.org/project/SpatialMST
 ```sh
 pip install SpatialMST
 ```
@@ -47,3 +51,11 @@ Once you have a copy of the source, you can install it with:
 cd spmetatme
 uv pip install .
 ```
+# Generate metabolic module flux rates and metabolite abundances for spatial transcriptomics using scFEA.
+The estimated metabolic module flux rates and metabolite abundances construct the two modalities and the spatial transcriptomics data represents the third modality.
+
+https://www.biorxiv.org/content/10.1101/2020.09.23.310656v1.full
+https://github.com/changwn/scFEA/tree/master
+
+# Integrating Spatial Transcriptomics with Metabolic Flux and Metabolite Abundance: A Tutorial on Spatial Multimodal Analysis
+https://github.com/Angione-Lab/Multimodal_breast_cancer_subtype_analysis/tree/main/Spatial_multi_omics_analysis
