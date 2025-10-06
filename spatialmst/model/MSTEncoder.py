@@ -5,6 +5,7 @@ from spatialmst.modules.metabolic_modality import MetaboliteModality, ReactionMo
 from spatialmst.modules.transcriptomic_modality import TranscriptomicModality
 from spatialmst.layers.IntegrationLayer import IntegrationLayer
 
+
 class MSTEncoder(nn.Module):
     """Spatial Multimodal Self-supervised Transformer"""
     def __init__(self, flux_in, flux_hidden, met_in, met_hidden, rna_in, rna_hidden, hidden_channels, out_channels, heads = 1):

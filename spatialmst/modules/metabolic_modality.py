@@ -2,6 +2,7 @@ import torch
 from torch_geometric.nn import TransformerConv
 import torch.nn.functional as F
 
+
 class ReactionModality(torch.nn.Module):
     def __init__(self, in_channels = 168, hidden_channels = 32, latent_channels = 16, heads=1):
         super(ReactionModality, self).__init__()

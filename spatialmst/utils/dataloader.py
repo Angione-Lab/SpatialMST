@@ -90,7 +90,7 @@ class SpatialDataset(Dataset):
         return data
 
     def __len__(self):
-        return 1  # Single graph dataset
+        return 1  # Single graph dataset 
 
     def __getitem__(self, idx):
         return self.data

@@ -141,15 +141,6 @@ class SpatialMSTTrainer():
             max_epochs=epochs,
             log_every_n_steps=1,
             enable_checkpointing=False
-            # callbacks=[
-            #     # ModelCheckpoint(save_weights_only=True,
-            #     #                 filename='{epoch}-{loss:.2f}',
-            #     #                 mode="min",
-            #     #                 monitor="loss",
-            #     #                 save_top_k=1,
-            #     #                 verbose=False),
-            #     # LearningRateMonitor("epoch")
-            # ],
         )
 
         self.trainer.fit(self.model, data)

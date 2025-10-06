@@ -27,4 +27,3 @@ class TranscriptomicModality(nn.Module):
         x = F.relu(x)
         x = F.normalize(x)
         return x
-
