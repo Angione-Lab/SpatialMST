@@ -37,7 +37,7 @@ PyPI package: https://pypi.org/project/SpatialMST
 pip install SpatialMST
 ```
 
-The source files for spMetaTME can be downloaded from the [Github repo](https://github.com/Angione-Lab/SpatialMST.git).
+The source files for SpatialMST can be downloaded from the [Github repo](https://github.com/Angione-Lab/SpatialMST.git).
 
 You can either clone the public repository:
 
@@ -48,7 +48,7 @@ git clone https://github.com/Angione-Lab/SpatialMST.git
 Once you have a copy of the source, you can install it with:
 
 ```sh
-cd spmetatme
+cd spatialmst
 uv pip install .
 ```
 ## Generate metabolic module flux rates and metabolite abundances for spatial transcriptomics using scFEA.
